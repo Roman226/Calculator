@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -264,6 +265,16 @@ namespace Calculator
         {
             Button b = (Button)sender;
             b.BackColor = Color.White;
+        }
+
+        private void Form1_MouseHover(object sender, EventArgs e)
+        {
+            Trace.WriteLine("mouse hover");
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
 }
