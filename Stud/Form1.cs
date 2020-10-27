@@ -29,5 +29,19 @@ namespace Stud
                 File.WriteAllText(@"C:\temp\StudentEdit.json", System.Text.Json.JsonSerializer.Serialize(edit.Get()));
             }
         }
+        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Toor toorEdit = new Toor();
+            toorEdit.ShowDialog();
+    
+            MessageBox.Show("You chose a tour for " + Toor.preview + " for 7 day from " + Toor.bday.Day + "." + Toor.bday.Month + " to " + Toor.eday.Day + "." + Toor.eday.Month);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            StudentListForm studentListForm = new StudentListForm();
+            studentListForm.ShowDialog();
+        }
     }
 }

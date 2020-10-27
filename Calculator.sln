@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "From1", "From1\From1.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "none", "none\none.csproj", "{86C16BF7-1BD0-45C5-BB07-F0B386277884}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stud", "Stud\Stud.csproj", "{5A73FB92-C3CD-4412-85C6-70040810B962}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stud", "Stud\Stud.csproj", "{5A73FB92-C3CD-4412-85C6-70040810B962}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
