@@ -11,6 +11,14 @@ namespace Stud
         public String Group { get; set; }
         public int Age { get; set; }
         public DateTime DateBirth{ get; set; }
+        
+
+        public override string? ToString()
+        {
+            string? str = Fname + " " + Lname + " " + Group + " " + Age + " " + DateBirth.ToString("dd.MM.yyyy");
+            return str;
+        }
+
 
     }
 }

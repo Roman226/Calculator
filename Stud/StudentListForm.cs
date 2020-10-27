@@ -34,5 +34,23 @@ namespace Stud
                 DataBaseService.Save();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(listBox1.SelectedItem == null)
+            {
+                return;
+            }
+            if(listBox1.SelectedItem != null)
+            {
+                Student student = new Student ();
+                student = (Student)listBox1.SelectedItem;
+                DataBaseService.dbContext.StudentList.Remove(student);
+                listBox1.Items.Remove(student);
+                DataBaseService.Save();
+
+            }
+
+        }
     }
 }
