@@ -14,6 +14,10 @@ namespace Stud
         {
             InitializeComponent();
         }
+
+
+        private Guid _id = Guid.NewGuid();
+
         public void Put(Student student)
         {
             textBox1.Text = student.Fname;
@@ -21,7 +25,7 @@ namespace Stud
             textBox3.Text = student.Group;
             textBox4.Text = student.Age.ToString();
             dateTimePicker1.Value = student.DateBirth;
-
+            _id = student.Id;
         }
         public Student Get()
         {
@@ -31,6 +35,7 @@ namespace Stud
             student.Group = textBox3.Text;
             student.Age = int.Parse(textBox4.Text);
             student.DateBirth = dateTimePicker1.Value;
+            student.Id = _id;
             return student;
         }
 

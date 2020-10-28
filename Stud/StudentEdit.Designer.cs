@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
@@ -43,6 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -99,8 +101,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(111, 28);
             this.textBox1.Name = "textBox1";
+            this.textBox1.PlaceholderText = "Enter your first name";
             this.textBox1.Size = new System.Drawing.Size(159, 23);
             this.textBox1.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.textBox1, "Enter your first name");
             // 
             // textBox2
             // 
@@ -108,8 +112,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Location = new System.Drawing.Point(111, 68);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PlaceholderText = "Enter your last name";
             this.textBox2.Size = new System.Drawing.Size(159, 23);
             this.textBox2.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.textBox2, "Enter your last name");
             // 
             // textBox3
             // 
@@ -117,8 +123,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Location = new System.Drawing.Point(111, 108);
             this.textBox3.Name = "textBox3";
+            this.textBox3.PlaceholderText = "Enter your group";
             this.textBox3.Size = new System.Drawing.Size(159, 23);
             this.textBox3.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.textBox3, "Enter your group");
             // 
             // label1
             // 
@@ -162,8 +170,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.Location = new System.Drawing.Point(111, 149);
             this.textBox4.Name = "textBox4";
+            this.textBox4.PlaceholderText = "Enter your age";
             this.textBox4.Size = new System.Drawing.Size(159, 23);
             this.textBox4.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.textBox4, "Enter your age");
             // 
             // label5
             // 
@@ -232,5 +242,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
